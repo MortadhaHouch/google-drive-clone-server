@@ -1,9 +1,5 @@
 let {Schema,model} = require("mongoose");
 let binSchema = new Schema({
-    owner:{
-        type:Schema.Types.ObjectId,
-        required: true
-    },
     files:{
         type:[Schema.Types.ObjectId],
         required: true

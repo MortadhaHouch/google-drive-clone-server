@@ -14,7 +14,7 @@ let folderSchema = new Schema({
     },
     size:{
         type: Number,
-        required: true
+        required: false
     },
     createdOn:{
         type: String,
@@ -27,9 +27,12 @@ let folderSchema = new Schema({
     files:{
         type: [Schema.Types.ObjectId],
     },
+    folders:{
+        type: [Schema.Types.ObjectId],
+    },
     downloads:{
         type: Number,
         default: 0
     }
 });
-module.exports = model("file",folderSchema);
+module.exports = model("folder",folderSchema);

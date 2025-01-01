@@ -10,9 +10,21 @@ let fileSchema = new Schema({
     },
     size:{
         type: Number,
-        required: true
+        required: false
     },
     downloads:{
+        type: Number,
+        default: 0
+    },
+    owner:{
+        type: Schema.Types.ObjectId,
+        required: true
+    },
+    isPrivate:{
+        type: Boolean,
+        default: true
+    },
+    views:{
         type: Number,
         default: 0
     }

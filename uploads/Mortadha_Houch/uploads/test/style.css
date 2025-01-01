@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+div.container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+div.header,div.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+div.nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+div.nav div h1{
+    font-size: 35px;
+}
+div.nav div:first-child,div.nav div:nth-child(3){
+    flex: 1;
+}
+div.nav div:first-child img{
+    background-color: rgb(0,208,179);
+    border-radius: 10px;
+}
+div.nav div:first-child img{
+    width: 30px;
+    height: 30px;
+}
+div.nav div:last-child img{
+    width: 30px;
+    height: 30px;
+}
+div.nav div:nth-child(2){
+    flex: 2;
+}
+div.nav div:nth-child(2) input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgb(245,245,244);
+    border: 2px solid rgb(177,176,176);
+}
+div.header{
+    width: 100%;
+    flex-direction: column;
+}
+div.sub-nav{
+    width: 100%;
+}
+div.sub-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+    width: 100%;
+}
+div.sub-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+div.nav div button{
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+}
+div.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+div.main h2{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: light;
+}
+div.main div.section-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+div.section-main div.card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding: 0;
+    background-color: rgb(1,188,178);
+}
+div.section-main div.card-row img{
+    height: 345px;
+}
+div.section-main div.card-row div button img,div.section-main div.card-column button img{
+    width: 30px;
+    height: 30px;
+}
+div.section-main div.card-row div button,div.section-main div.card-column button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div.section-main div.card-row div{
+    width: 50%;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    height: 100%;
+}
+div.section-main div.card-row div,div.section-main div.card-row div p{
+    width: 100%;
+    height: 100%;
+}
+div.section-main div.card-row div button{
+    width: 100%;
+    background-color: rgb(1,188,178);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+div.section-main div.card-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    height: 100%;
+}
+div.section-main div.card-column img{
+    width: 100%;
+    height:60%;
+}
+div.section-main div.card-column button{
+    width: 100%;
+    background-color: rgb(1,188,178);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+div.images-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(173,234,232);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+div.images-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div.images-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+div.cookie-container {
+    width: 69%;
+    background-color: rgb(254,255,254);
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px;
+    border: 2px solid black;
+}
+div.cookie-container button{
+    padding: 5px 15px;
+    background-color: rgb(1,188,178);
+    box-shadow: 2px 2px 2px 0px black;
+    font-size: 15px;
+}
+div.cookie-container div p a{
+    text-decoration: underline;
+    color: rgb(46,104,160);
+}
+button img{
+    width: 30px;
+    height: 30px;
+}

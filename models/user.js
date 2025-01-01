@@ -34,6 +34,12 @@ let userSchema = new Schema({
     },
     avatar:{
         type:Schema.Types.ObjectId,
+    },
+    sharedFiles:{
+        type:[Schema.Types.ObjectId]
+    },
+    sharedFolders:{
+        type:[Schema.Types.ObjectId]
     }
 })
 userSchema.pre('save', async function(next) {

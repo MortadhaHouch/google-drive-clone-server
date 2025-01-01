@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div>
+                    <img src="./images/assets/leaf.png" alt="leaf">
+                    <h1>EasyBay</h1>
+                </div>
+                <div>
+                    <input type="search" placeholder="Seach anything" name="search" id="search">
+                </div>
+                <div>
+                    <button>Sign in</button>
+                    <button class="card-button" onclick="alertCardState()">
+                        <img src="images/assets/cart-dark.png" alt="cart-dark">
+                    </button>
+                </div>
+            </div>
+            <div class="sub-nav">
+                <ul>
+                    <li><a href="#">Aeronium</a></li>
+                    <li><a href="#">Andromischus</a></li>
+                    <li><a href="#">Agave</a></li>
+                    <li><a href="#">Aloe</a></li>
+                    <li><a href="#">Anampseros</a></li>
+                    <li><a href="#">Aristaloe</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Your source for Serious succelent specialties</h2>
+            <div class="section-main">
+                <div class="card-row">
+                    <div>
+                        <p>
+                            Discover succelent varieties one pot or rack at a time
+                        </p>
+                        <button>
+                            <span>Discover</span> <img src="images/assets/arrow-light.png" alt="">
+                        </button>
+                    </div>
+                    <img src="images/assets/succulents-2.jpg" alt="succulents" onmouseover="changeImgSrc(this)">
+                </div>
+                <div class="card-column">
+                    <img src="images/assets/aloe-m.jpg" alt="">
+                    <button><span>Soothing Aloe</span> <img src="images/assets/arrow-light.png" alt=""></button>
+                </div>
+            </div>
+            <div class="images-container">
+                <div>
+                    <img src="images/assets/aeonium-s.jpg" alt="">
+                    <p>aeonium</p>
+                </div>
+                <div>
+                    <img src="images/assets/aloe-m.jpg" alt="">
+                    <p>aloe</p>
+                </div>
+                <div>
+                    <img src="images/assets/cactus-s.jpg" alt="">
+                    <p>cactus</p>
+                </div>
+                <div>
+                    <img src="images/assets/cactus-s.jpg" alt="">
+                    <p>cactus</p>
+                </div>
+                <div>
+                    <img src="images/assets/echeveria-s.jpg" alt="">
+                    <p>echeveria</p>
+                </div>
+                <div>
+                    <img src="images/assets/sedum-s.jpg" alt="">
+                    <p>sedum</p>
+                </div>
+                <div>
+                    <img src="images/assets/sempervivum-s.jpg" alt="">
+                    <p>sempervivum</p>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-container">
+            <img src="images/assets/alert-dark.png" alt="alert">
+            <div>
+                <p>
+                    This site makes use of third party cookies, by clicking "I accept" you agree to the terms oulined in our <a href="#">cookie policy</a>
+                </p>
+            </div>
+            <button onclick="remove('cookie-container')">I accept</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
